@@ -31,7 +31,9 @@ Reusable Components
   max-width: 1140px;
   margin: 0 auto;
 }
-
+section {
+  padding: 80px 0;
+}
 span {
   color: #e69a0d;
 }
@@ -133,12 +135,4 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e69a0d;
-}
-
-
-
-
-
-.make-room {
-  margin: 100px 0 500px;
 }
