@@ -111,7 +111,38 @@ h2:after {
   color: #e69a0d;
   margin-bottom: 10px;
 }
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e69a0d;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  /* Secret to align text and icons */
+  line-height: 1.2rem;
+  vertical-align: middle;
+  margin-top: -5px;
+}
 
+/* ------ Links ------ */
+
+.city-features a:link,
+.city-features a:visited {
+  color: #e69a0d;
+  text-decoration: none;
+  padding-right: 8px;
+  display: inline-block;
+  height: 26px;
+  border-right: 1px solid #e69a0d;
+  transition: border-bottom .4s, border-right .4s, color .4s;
+}
+.city-features a:hover,
+.city-features a:active {
+  color: #333;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid #333;
+
+}
 
 /* ------ Buttons ------ */
 
@@ -280,4 +311,54 @@ How It Works
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ------------------------------------------------
+Cities
+------------------------------------------------ */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-bottom: 5px;
+}
+
+/* ------------------------------------------------
+Testimonials
+------------------------------------------------ */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 1.45rem;
+  position: relative;
+  margin-top: 40px;
+}
+blockquote:before {
+  content: "\201C";
+  font-size: 5rem;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+cite {
+  font-size: .9rem;
+  margin-top: 25px;
+  display: block;
+}
+cite img {
+  height: 45px;
+  border-radius: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
