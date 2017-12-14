@@ -147,7 +147,8 @@ h2:after {
 /* ------ Buttons ------ */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -157,7 +158,8 @@ h2:after {
   transition: background-color .2s, border .2s, color .2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: #e69a0d;
   border: 1px solid #e69a0d;
   margin-right: 15px;
@@ -168,7 +170,9 @@ h2:after {
   color: #e69a0d;
 }
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   background-color: #cf8806;
   border: 1px solid #cf8806;
 }
@@ -408,4 +412,34 @@ Sign Up
 .plan-box ul li {
   padding: 5px 0;
 
+}
+
+/* ------------------------------------------------
+Form
+------------------------------------------------ */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100px;
+}
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+*:focus { outline: none; }
+.inline {
+  display: inline;
+  font-size: .8rem;
+  font-weight: 500;
 }
